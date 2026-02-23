@@ -54,7 +54,7 @@ You do not need any build tools or package managers to run this project.
 
 ## ✨ Interactivity Highlights
 
-- **No-AI footprint JavaScript:** The JS is cleanly written, perfectly readable, and handles the `submit` event to simulate a network request without standard AI giveaways.
+- **JavaScript:** The JS is cleanly written, perfectly readable, and handles the `submit` event to simulate a network request.
 - **Visual Feedback:** Uses transitions for the accordion expanding and chevron rotating.
 - **Form UX:** The 'Contact Us' button opens a modal. Submitting an invalid form triggers Bootstrap's validation UI. Submitting a valid form simulates a loading state on the button before showing a success message.
 
