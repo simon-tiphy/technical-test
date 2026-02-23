@@ -4,7 +4,7 @@ This repository contains the implementation of the Frontend Assessment for the "
 
 ## 🚀 Live Demo
 
-_(If deployed, add your live link here, e.g., GitHub Pages or Vercel)_
+https://technical-test-nu.vercel.app/ -Vercel
 
 ## 🎨 Design & Layout
 
