@@ -1,0 +1,172 @@
+/* 
+ * Custom Styles for Investment Knowledge Club Dashboard
+ * Built with mobile-first approach, extending Bootstrap 5
+ */
+
+:root {
+  --color-warning: #f1bf24;
+  --color-dark: #2c2f33;
+  --color-dark-alt: #23272a;
+
+  --stat-pink: #ffeef2;
+  --stat-green: #ebf6ee;
+  --stat-orange: #fff4e6;
+
+  --bg-foundation: #d3ad35;
+  --bg-economy: #99a9b9;
+  --bg-content-dark: #3a3a3a;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base Layout Constraints */
+.max-w-custom {
+  max-width: 1000px;
+}
+
+.app-card {
+  max-width: 480px; /* Mobile design aspect ratio */
+  border-radius: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+@media (min-width: 768px) {
+  .app-card {
+    max-width: 800px; /* Expand organically on tablet/desktop */
+  }
+}
+
+/* Welcome Hero Card */
+.welcome-card {
+  background-color: var(--color-dark);
+  border: 1px solid var(--color-warning);
+}
+
+.profile-img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-color: var(--color-warning) !important;
+}
+
+/* Statistics Grid */
+.stat-card {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06) !important;
+}
+
+.stat-avatar {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+.bg-stat-pink {
+  background-color: var(--stat-pink);
+}
+.bg-stat-green {
+  background-color: var(--stat-green);
+}
+.bg-stat-orange {
+  background-color: var(--stat-orange);
+}
+
+/* Motivation Banner */
+.banner-card {
+  background-color: var(--color-dark-alt);
+}
+
+/* Memberships Custom Accordion */
+.bg-foundation {
+  background-color: var(--bg-foundation);
+}
+.bg-economy {
+  background-color: var(--bg-economy);
+}
+.bg-dark-custom {
+  background-color: var(--bg-content-dark);
+}
+
+.membership-header {
+  transition:
+    background-color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.membership-header:hover {
+  opacity: 0.95;
+}
+
+.membership-header:focus {
+  outline: none;
+}
+
+/* Accordion Animation Mechanics */
+.membership-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+}
+
+.membership-body.is-open {
+  max-height: 600px; /* Safe upper bound for expanding */
+  transition: max-height 0.5s ease-in-out;
+}
+
+.transition-base {
+  transition: transform 0.3s ease;
+}
+
+/* Rotating chevron */
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.tracking-wide {
+  letter-spacing: 0.03em;
+}
+
+/* Call to Action Wrapper */
+.cta-button {
+  background-color: var(--color-warning);
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.02);
+  opacity: 0.95;
+}
+
+.whatsapp-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.cta-button:hover .whatsapp-icon {
+  transform: scale(1.1);
+}
+
+/* Form Styles and Tweaks */
+.form-floating > label {
+  font-size: 0.9rem;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--color-warning);
+  box-shadow: 0 0 0 0.25rem rgba(241, 191, 36, 0.25);
+}
